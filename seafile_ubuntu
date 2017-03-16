@@ -99,12 +99,12 @@ echo
 # -------------------------------------------
 # Vars
 # -------------------------------------------
-SEAFILE_ADMIN=admin@seafile.local
+SEAFILE_ADMIN=jamsheer.kandoth@gmail.com
 SEAFILE_SERVER_USER=seafile
 SEAFILE_SERVER_HOME=/opt/seafile
 IP_OR_DOMAIN=$(hostname -i)
 SEAFILE_VERSION=$1
-TIME_ZONE=Europe/Berlin
+TIME_ZONE=Asia/Dubai
 
 if is_pro; then
     SEAFILE_SERVER_PACKAGE=seafile-pro-server_${SEAFILE_VERSION}_x86-64.tar.gz
@@ -167,10 +167,10 @@ x509_extensions = v3_ca
 prompt = no
 
 [req_distinguished_name]
-countryName = DE
-stateOrProvinceName = Bayern
-localityName = Wiesentheid
-organizationName = Seafile
+countryName = AE
+stateOrProvinceName = Dubai
+localityName = MediaCity
+organizationName = YouGotaGift
 organizationalUnitName = Seahub
 emailAddress = postmaster@$(hostname -d)
 # Must be last for Seafile client to validate...
